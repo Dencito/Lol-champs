@@ -32,7 +32,7 @@ const ChampsList = () => {
     <div className=" container-fluid">
         
         <div className="search">
-        <input type="text" className="search" placeholder="Champion: akali" onChange={(e)=> setSearch(e.target.value)} />
+        <input type="text" className="search ms-4 mb-3" placeholder="Champion: akali" onChange={(e)=> setSearch(e.target.value)} />
         </div>
         {champions.length === 0  ? <h1 className="mt-5">No encontramos al champion {search}</h1>:
         (
