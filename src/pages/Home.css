@@ -55,7 +55,7 @@
     transition: .3s, background-size .2s .2s;
   }
   .ant-popover-inner-content {
-    max-width: 350px !important;
+    max-width: 350px !important ;
   }
 
   .loading {
