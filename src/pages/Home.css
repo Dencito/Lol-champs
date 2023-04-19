@@ -1,0 +1,77 @@
+.home {
+    background-image: url("https://r4.wallpaperflare.com/wallpaper/812/541/311/video-game-legends-of-runeterra-poro-league-of-legends-snow-hd-wallpaper-59f8cca096616ff40b02ebdecc5349bc.jpg");
+    width: 100%;
+    min-height: 100vh;
+    border-image-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link:hover { color : inherit } 
+
+
+.hover-img {
+    --c: #D0A85C; /* the border color */
+    --b: 4px;    /* the border thickness*/
+    --g: 2px;     /* the gap on hover */
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .hover-img:hover {
+    --_i: 100%;
+    transition: .3s, background-size .2s .2s;
+  }
+
+  .hover-img-spell {
+    width: 70px;
+    height: 70px;
+    --c: #D0A85C; /* the border color */
+    --b: 4px;    /* the border thickness*/
+    --g: 2px;     /* the gap on hover */
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .hover-img-spell:hover {
+    --_i: 100%;
+    transition: .3s, background-size .2s .2s;
+  }
+  .ant-popover-inner-content {
+    max-width: 350px !important;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    height: 90vh;
+  }
+
+  .ant-spin-dot {
+    font-size: 60px !important;
+  }
+
+  .search {
+    border: none;
+    outline: none;
+  }
+  
