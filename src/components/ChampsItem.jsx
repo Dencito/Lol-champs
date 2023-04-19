@@ -8,7 +8,7 @@ const ChampsItem = ({data}) => {
         <h2 className='text-center'>
             {data.id}
         </h2>
-        <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${data.id}_0.jpg`} alt="" width="100%" height="500px" />
+        <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${data.id}_0.jpg`} alt="" width="100%" height="500px" />
         
         </Link>
   )

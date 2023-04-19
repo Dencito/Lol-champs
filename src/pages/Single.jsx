@@ -8,7 +8,7 @@ const Single = () => {
   useEffect(() => {
     const getChamp = async () => {
       const res = await fetch(
-        `http://ddragon.leagueoflegends.com/cdn/13.8.1/data/es_AR/champion/${name}.json`
+        `https://ddragon.leagueoflegends.com/cdn/13.8.1/data/es_AR/champion/${name}.json`
       );
       const data = await res.json();
       setChampion(data.data[name]);
@@ -32,7 +32,7 @@ const Single = () => {
         <div className="col-md-8 col-lg-4 col-xl-3 mx-auto">
           <img
             className="hover-img"
-            src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion?.id}_0.jpg`}
+            src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion?.id}_0.jpg`}
             alt=""
             width="100%"
             height="500px"
@@ -52,7 +52,7 @@ const Single = () => {
               >
                 <img
                   className="hover-img-spell"
-                  src={`http://ddragon.leagueoflegends.com/cdn/13.8.1/img/passive/${champion?.passive?.image?.full}`}
+                  src={`https://ddragon.leagueoflegends.com/cdn/13.8.1/img/passive/${champion?.passive?.image?.full}`}
                   alt=""
                 />
               </Popover>
@@ -68,7 +68,7 @@ const Single = () => {
                   <img
                     
                     className="hover-img-spell"
-                    src={`http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/${spell?.image?.full}`}
+                    src={`https://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/${spell?.image?.full}`}
                     alt=""
                   />
                 </Popover>

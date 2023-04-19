@@ -10,7 +10,7 @@ const ChampsList = () => {
   useEffect(() => {
     const getChamps = async () => {
       const response = await fetch(
-        "http://ddragon.leagueoflegends.com/cdn/13.8.1/data/es_AR/champion.json"
+        "https://ddragon.leagueoflegends.com/cdn/13.8.1/data/es_AR/champion.json"
       );
       const data = await response.json();
       setChampions(Object.values(data.data).filter((item) => {
